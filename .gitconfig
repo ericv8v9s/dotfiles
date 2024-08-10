@@ -1,0 +1,17 @@
+[user]
+	name = Eric
+	email = ericv8v9s@outlook.com
+[core]
+	autocrlf = input
+[gpg]
+	program = gpg
+
+[alias]
+	dog = log --decorate --oneline --graph
+	dogs = log --decorate --oneline --graph --simplify-by-decoration
+
+[pull]
+	ff = only
+
+[rebase]
+	autoSquash = true

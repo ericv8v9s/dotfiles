@@ -1,0 +1,2 @@
+The existance of this directory stops kak from loading the global defaults.
+The defaults are still sourced by ../compute-sources.py

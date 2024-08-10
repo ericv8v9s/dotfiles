@@ -1,0 +1,4 @@
+# config file paths are computed and sourced; see compute-sources.py
+evaluate-commands %sh{
+	python3 "${XDG_CONFIG_HOME:-$HOME/.config}/kak/compute-sources.py"
+}
