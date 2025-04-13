@@ -1,12 +1,10 @@
 #!/bin/sh
 
+# display and other X related settings
+. "$HOME"/.local/bin/xmisc
+
 fcitx5 -d
 
-keynav daemonize
-
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-xmisc
-
-xss-lock xsecurelock &
+kaynav daemonize
 
 exec i3

@@ -9,9 +9,7 @@
 [alias]
 	dog = log --decorate --oneline --graph
 	dogs = log --decorate --oneline --graph --simplify-by-decoration
-
+[init]
+	defaultBranch = master
 [pull]
 	ff = only
-
-[rebase]
-	autoSquash = true

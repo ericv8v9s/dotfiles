@@ -14,7 +14,7 @@ esac
 
 # bash-completion defines _op, which does not do what we want
 # overwrite it so the alias works
-#complete -F _minimal op
+complete -F _minimal op
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -33,3 +33,7 @@ for f in "$HOME/.bash_conf.d/"*; do
 		source "$f"
 	fi
 done
+
+if [ -f "$HOME/.bashrc_local" ]; then
+	. "$HOME/.bashrc_local"
+fi

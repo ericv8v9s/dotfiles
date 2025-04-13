@@ -59,7 +59,8 @@ add-highlighter shared/markdown/listblock/codeblock region -match-capture \
     ^(\h*)```\h*$ \
     regions
 add-highlighter shared/markdown/listblock/codeblock/ default-region fill meta
-add-highlighter shared/markdown/codeline region "^( {4}|\t)" "$" fill meta
+# We don't use this indent syntax.
+#add-highlighter shared/markdown/codeline region "^( {4}|\t)" "$" fill meta
 
 # https://spec.commonmark.org/0.29/#link-destination
 add-highlighter shared/markdown/angle_bracket_url region (?<=<)([a-z]+://|(mailto|magnet|xmpp):) (?!\\).(?=>)|\n fill link

@@ -3,3 +3,6 @@
 
 # gpg needs this
 export GPG_TTY=$(tty)
+
+# Haskell
+source "$HOME/.ghcup/env"

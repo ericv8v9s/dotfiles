@@ -34,6 +34,8 @@ fi
 PS1="${color_clear}${color_pwd}[\w]\n${color_username}\u"
 if [[ "$SSH_CONNECTION" ]]; then
 	PS1="${PS1}${color_ssh_host}@\H${color_clear}"
+	PS1="${PS1}${color_prompt_symbol} >${color_clear} "
+else
+	PS1="${PS1}${color_prompt_symbol} >${color_clear} "
 fi
-PS1="${PS1}${color_prompt_symbol} >${color_clear} "
 unset color_prompt force_color_prompt
