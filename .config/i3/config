@@ -235,34 +235,34 @@ bindsym $mod+r mode "resize"
 ################
 ## MOUSE MODE ##
 ################
-set $pointer_move exec --no-startup-id xdotool mousemove_relative --
-set $pointer_step 10
-set $pointer_step_big 100
-
-mode "pointer" {
-	bindsym k	$pointer_move 0 -$pointer_step
-	bindsym j	$pointer_move 0  $pointer_step
-	bindsym h	$pointer_move -$pointer_step 0
-	bindsym l	$pointer_move  $pointer_step 0
-
-	bindsym $mod+k	$pointer_move 0 -$pointer_step_big
-	bindsym Ctrl+k	$pointer_move 0 -$pointer_step_big
-	bindsym $mod+j	$pointer_move 0  $pointer_step_big
-	bindsym Ctrl+j	$pointer_move 0  $pointer_step_big
-	bindsym $mod+h	$pointer_move -$pointer_step_big 0
-	bindsym Ctrl+h	$pointer_move -$pointer_step_big 0
-	bindsym $mod+l	$pointer_move  $pointer_step_big 0
-	bindsym Ctrl+l	$pointer_move  $pointer_step_big 0
-
-	# left/right click
-	bindsym d	$execnw xdotool click 1
-	bindsym f	$execnw xdotool click 3
-
-	bindsym Return mode "default"; $execnw xdotool click 1
-	bindsym Escape mode "default"
-	bindsym $mod+m mode "default"
-}
-bindsym $mod+m mode "pointer"
+#set $pointer_move exec --no-startup-id xdotool mousemove_relative --
+#set $pointer_step 10
+#set $pointer_step_big 100
+#
+#mode "pointer" {
+#	bindsym k	$pointer_move 0 -$pointer_step
+#	bindsym j	$pointer_move 0  $pointer_step
+#	bindsym h	$pointer_move -$pointer_step 0
+#	bindsym l	$pointer_move  $pointer_step 0
+#
+#	bindsym $mod+k	$pointer_move 0 -$pointer_step_big
+#	bindsym Ctrl+k	$pointer_move 0 -$pointer_step_big
+#	bindsym $mod+j	$pointer_move 0  $pointer_step_big
+#	bindsym Ctrl+j	$pointer_move 0  $pointer_step_big
+#	bindsym $mod+h	$pointer_move -$pointer_step_big 0
+#	bindsym Ctrl+h	$pointer_move -$pointer_step_big 0
+#	bindsym $mod+l	$pointer_move  $pointer_step_big 0
+#	bindsym Ctrl+l	$pointer_move  $pointer_step_big 0
+#
+#	# left/right click
+#	bindsym d	$execnw xdotool click 1
+#	bindsym f	$execnw xdotool click 3
+#
+#	bindsym Return mode "default"; $execnw xdotool click 1
+#	bindsym Escape mode "default"
+#	bindsym $mod+m mode "default"
+#}
+#bindsym $mod+m mode "pointer"
 
 
 mode "rotate" {

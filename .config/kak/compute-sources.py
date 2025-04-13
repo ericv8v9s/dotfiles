@@ -17,8 +17,8 @@ INCLUDES = [
 
 
 EXCLUDES = {
-	"/usr/share/kak/autoload/filetype/lisp.kak",
-	"/usr/share/kak/autoload/filetype/markdown.kak"
+	"/usr/share/kak/autoload/filetype/markdown.kak",
+	"/usr/share/kak/autoload/filetype/clojure.kak",
 }
 
 

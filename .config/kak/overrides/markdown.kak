@@ -35,7 +35,7 @@ hook -group markdown-highlight global WinSetOption filetype=markdown %{
 }
 
 
-provide-module -override markdown %{
+provide-module markdown %{
 
 # Highlighters
 # ‾‾‾‾‾‾‾‾‾‾‾‾
@@ -80,10 +80,10 @@ add-highlighter shared/markdown/inline/text/ regex (\A|^\n)[^\n]+\n-{2,}\h*\n\h*
 # Atx-style header
 add-highlighter shared/markdown/inline/text/ regex ^#[^\n]* 0:header
 
-add-highlighter shared/markdown/inline/text/ regex (?<!\*)(\*([^\s*]|([^\s*](\n?[^\n*])*[^\s*]))\*)(?!\*) 1:+i
-#add-highlighter shared/markdown/inline/text/ regex (?<!_)(_([^\s_]|([^\s_](\n?[^\n_])*[^\s_]))_)(?!_) 1:+i
-add-highlighter shared/markdown/inline/text/ regex (?<!\*)(\*\*([^\s*]|([^\s*](\n?[^\n*])*[^\s*]))\*\*)(?!\*) 1:+b
-#add-highlighter shared/markdown/inline/text/ regex (?<!_)(__([^\s_]|([^\s_](\n?[^\n_])*[^\s_]))__)(?!_) 1:+b
+add-highlighter shared/markdown/inline/text/ regex (?<!\*)(\*[^\n*]\*)(?!\*) 1:+i
+add-highlighter shared/markdown/inline/text/ regex (?<!_)(_[^\n_]_)(?!_) 1:+i
+add-highlighter shared/markdown/inline/text/ regex (?<!\*)(\*\*[^\n*]\*\*)(?!\*) 1:+b
+add-highlighter shared/markdown/inline/text/ regex (?<!_)(__[^\n_]__)(?!_) 1:+b
 add-highlighter shared/markdown/inline/text/ regex ^\h*(>\h*)+ 0:comment
 add-highlighter shared/markdown/inline/text/ regex "\H( {2,})$" 1:+r@meta
 

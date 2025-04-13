@@ -7,4 +7,6 @@ keynav daemonize
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 xmisc
 
+xss-lock xsecurelock &
+
 exec i3
