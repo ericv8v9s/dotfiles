@@ -5,4 +5,4 @@
 export GPG_TTY=$(tty)
 
 # Haskell
-source "$HOME/.ghcup/env"
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
